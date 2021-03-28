@@ -1,6 +1,7 @@
 package com.xworkz.fooditems;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.ListIterator;
@@ -25,6 +26,13 @@ public class Tester {
 		HashSet<String> cars=carss.getCars();
 		for (String i : cars) {
 			  System.out.println(i);
+			}
+		
+		System.out.println("*********************************");
+		CapitalCities capitalCitiees = applicationContext.getBean(CapitalCities.class);
+		HashMap<String,String> capitalCities=capitalCitiees.getCapitalCities();
+		for (String i : capitalCities.keySet()) {
+			  System.out.println("key: " + i + "      value: " + capitalCities.get(i));
 			}
 	}
 

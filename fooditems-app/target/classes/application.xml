@@ -21,4 +21,13 @@
       </set>
       </property>
       </bean>
+      <bean class="com.xworkz.fooditems.CapitalCities"  id="capitalCities">
+      <property name="capitalCities">
+      <map>
+      <entry key="karnataka" value="Bangalore"></entry>
+      <entry key="Andhra Pradesh" value="Hyderabad"></entry>
+      <entry key="Tamil Nadu" value="Chennai"></entry>
+      </map>
+      </property>
+      </bean>
 </beans>
